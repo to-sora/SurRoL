@@ -10,9 +10,9 @@ from surrol.utils.utils import RGB_COLOR_255, Boundary, Trajectory, get_centroid
 from surrol.robots.ecm import RENDER_HEIGHT, RENDER_WIDTH, FoV
 from surrol.const import ASSET_DIR_PATH
 import numpy as np
+from surrol.tasks.ecm_env_mem import EcmEnvMem
 
-
-class ActiveTrack(EcmEnv):
+class ActiveTrack(EcmEnvMem):
     """
     Active track is not a GoalEnv since the environment changes internally.
     The reward is shaped.
