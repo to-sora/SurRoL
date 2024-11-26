@@ -63,3 +63,55 @@ register(
     entry_point='surrol.tasks.ecm_active_track:ActiveTrack',
     max_episode_steps=500,
 )
+
+register(
+    id='GauzeRetrieveMem-v0',  # Ensure it follows Gym's naming convention
+    entry_point='surrol.tasks.gauze_retrieve_mem:GauzeRetrieveMem',  # Path to your custom environment
+    max_episode_steps=50,
+)
+
+register(
+    id='NeedlePickMem-v0',
+    entry_point='surrol.tasks.needle_pick_mem:NeedlePickMem',
+    max_episode_steps=50,
+)
+
+register(
+    id='NeedleReachMem-v0',
+    entry_point='surrol.tasks.needle_reach_mem:NeedleReachMem',
+    max_episode_steps=50,
+)
+
+register(
+    id='NeedleRegraspMem-v0',
+    entry_point='surrol.tasks.needle_regrasp_bimanual_mem:NeedleRegraspMem',
+    max_episode_steps=50,
+)
+
+register(
+    id='BiPegTransferMem-v0',
+    entry_point='surrol.tasks.peg_transfer_bimanual_mem:BiPegTransferMem',
+    max_episode_steps=50,
+)
+
+register(
+    id='PegTransferMem-v0',
+    entry_point='surrol.tasks.peg_transfer_mem:PegTransferMem',
+    max_episode_steps=50,
+)
+
+register(
+    id='MisOrientMem-v0',
+    entry_point='surrol.tasks.ecm_misorient_mem:MisOrientMem',
+    max_episode_steps=50,
+)
+register(
+    id='ECMReachMem-v0',
+    entry_point='surrol.tasks.ecm_reach_mem:ECMReachMem',
+    max_episode_steps=50,
+)
+register(
+    id='StaticTrackMem-v0',
+    entry_point='surrol.tasks.ecm_static_track_mem:StaticTrackMem',
+    max_episode_steps=50,
+)
