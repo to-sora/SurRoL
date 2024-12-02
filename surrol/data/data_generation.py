@@ -10,6 +10,7 @@ import time
 import numpy as np
 import imageio
 from surrol.const import ROOT_DIR_PATH
+from datetime import datetime  # 1. Import datetime for timestamps
 
 parser = argparse.ArgumentParser(description='generate demonstrations for imitation')
 parser.add_argument('--env', type=str, required=True,
@@ -27,7 +28,6 @@ infos = []
 images = []  # record video
 masks = []
 
-
 def main():
     env = gym.make(args.env, render_mode='human')  # 'human'
     num_itr = 100 if not args.video else 1
@@ -40,11 +40,18 @@ def main():
     if args.steps is None:
         args.steps = env._max_episode_steps
 
+    # 2. Initialize counters
+    total_trials = 0
+    failed_epochs = 0
+
     print()
     while len(actions) < num_itr:
         obs = env.reset()
         print("ITERATION NUMBER ", len(actions))
-        goToGoal(env, obs)
+        success = goToGoal(env, obs)
+        total_trials += 1  # Increment total trials
+        if not success:
+            failed_epochs += 1  # Increment failed epochs
         cnt += 1
 
     file_name = "data_"
@@ -77,6 +84,22 @@ def main():
     print("Saved data at:", folder)
     print("Time used: {:.1f}m, {:.1f}s\n".format(used_time // 60, used_time % 60))
     print(f"Trials: {num_itr}/{cnt}")
+
+    # 3. Log the results
+    log_filepath = os.path.join(ROOT_DIR_PATH, 'data', 'data_generation.log')  # Define log file path
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # Current timestamp
+
+    with open(log_filepath, 'a') as log_file:
+        log_file.write(f"Timestamp: {timestamp}\n")
+        log_file.write(f"Environment: {args.env}\n")
+        log_file.write(f"Total Trials Attempted: {total_trials}\n")
+        log_file.write(f"Successful Episodes: {len(actions)}\n")
+        log_file.write(f"Failed Episodes: {failed_epochs}\n")
+        log_file.write(f"Data Saved at: {folder}\n")
+        log_file.write(f"Total Time Used: {used_time // 60:.1f}m {used_time % 60:.1f}s\n")
+        log_file.write(f"Trials Completed: {cnt}/{num_itr}\n")
+        log_file.write("-" * 50 + "\n")  # Separator for readability
+
     env.close()
 
 
@@ -103,7 +126,7 @@ def goToGoal(env, last_obs):
         # print(f" -> obs: {obs}, reward: {reward}, done: {done}, info: {info}.")
         time_step += 1
 
-        if isinstance(obs, dict) and info['is_success'] > 0 and not success:
+        if isinstance(obs, dict) and info.get('is_success', 0) > 0 and not success:
             print("Timesteps to finish:", time_step)
             success = True
 
@@ -116,6 +139,9 @@ def goToGoal(env, last_obs):
         actions.append(episode_acs)
         observations.append(episode_obs)
         infos.append(episode_info)
+        return True  # Indicate success
+    else:
+        return False  # Indicate failure
 
 
 if __name__ == "__main__":

@@ -1,0 +1,162 @@
+Timestamp: 2024-12-01 10:17:46
+Environment: NeedleReach-v0
+Total Trials Attempted: 100
+Successful Episodes: 100
+Failed Episodes: 0
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 1.0m 15.1s
+Trials Completed: 100/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:19:10
+Environment: NeedleReachMem-v0
+Total Trials Attempted: 100
+Successful Episodes: 100
+Failed Episodes: 0
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 1.0m 17.2s
+Trials Completed: 100/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:20:04
+Environment: GauzeRetrieve-v0
+Total Trials Attempted: 100
+Successful Episodes: 100
+Failed Episodes: 0
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 0.0m 47.4s
+Trials Completed: 100/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:20:57
+Environment: GauzeRetrieveMem-v0
+Total Trials Attempted: 100
+Successful Episodes: 100
+Failed Episodes: 0
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 0.0m 47.2s
+Trials Completed: 100/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:22:14
+Environment: NeedlePick-v0
+Total Trials Attempted: 100
+Successful Episodes: 100
+Failed Episodes: 0
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 1.0m 10.1s
+Trials Completed: 100/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:23:31
+Environment: NeedlePickMem-v0
+Total Trials Attempted: 100
+Successful Episodes: 100
+Failed Episodes: 0
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 1.0m 9.9s
+Trials Completed: 100/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:25:39
+Environment: PegTransfer-v0
+Total Trials Attempted: 100
+Successful Episodes: 100
+Failed Episodes: 0
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 1.0m 58.2s
+Trials Completed: 100/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:27:46
+Environment: PegTransferMem-v0
+Total Trials Attempted: 101
+Successful Episodes: 100
+Failed Episodes: 1
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 1.0m 58.3s
+Trials Completed: 101/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:29:38
+Environment: NeedleRegrasp-v0
+Total Trials Attempted: 104
+Successful Episodes: 100
+Failed Episodes: 4
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 1.0m 44.4s
+Trials Completed: 104/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:31:34
+Environment: NeedleRegraspMem-v0
+Total Trials Attempted: 104
+Successful Episodes: 100
+Failed Episodes: 4
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 1.0m 46.4s
+Trials Completed: 104/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:35:11
+Environment: BiPegTransfer-v0
+Total Trials Attempted: 108
+Successful Episodes: 100
+Failed Episodes: 8
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 3.0m 24.2s
+Trials Completed: 108/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:38:38
+Environment: BiPegTransferMem-v0
+Total Trials Attempted: 104
+Successful Episodes: 100
+Failed Episodes: 4
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 3.0m 15.7s
+Trials Completed: 104/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:39:10
+Environment: ECMReach-v0
+Total Trials Attempted: 102
+Successful Episodes: 100
+Failed Episodes: 2
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 0.0m 27.8s
+Trials Completed: 102/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:39:41
+Environment: ECMReachMem-v0
+Total Trials Attempted: 102
+Successful Episodes: 100
+Failed Episodes: 2
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 0.0m 26.8s
+Trials Completed: 102/100
+--------------------------------------------------
+Timestamp: 2024-12-01 10:51:11
+Environment: MisOrient-v0
+Total Trials Attempted: 109
+Successful Episodes: 100
+Failed Episodes: 9
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 11.0m 25.1s
+Trials Completed: 109/100
+--------------------------------------------------
+Timestamp: 2024-12-01 11:03:03
+Environment: MisOrientMem-v0
+Total Trials Attempted: 114
+Successful Episodes: 100
+Failed Episodes: 14
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 11.0m 47.8s
+Trials Completed: 114/100
+--------------------------------------------------
+Timestamp: 2024-12-01 11:13:23
+Environment: StaticTrack-v0
+Total Trials Attempted: 102
+Successful Episodes: 100
+Failed Episodes: 2
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 10.0m 11.9s
+Trials Completed: 102/100
+--------------------------------------------------
+Timestamp: 2024-12-01 11:23:41
+Environment: StaticTrackMem-v0
+Total Trials Attempted: 101
+Successful Episodes: 100
+Failed Episodes: 1
+Data Saved at: /home/fyp/DEX/SurRoL/surrol/data/demo
+Total Time Used: 10.0m 10.3s
+Trials Completed: 101/100
+--------------------------------------------------
